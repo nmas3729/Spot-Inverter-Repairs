@@ -32,16 +32,16 @@ const services: {
 }[] = [
   {
     number: "01",
-    title: "Deye inverter repairs",
+    title: "All-Brand Inverter Repairs",
     description:
-      "Practical repair support for Deye inverters, from fault finding to the right next step.",
+      "Comprehensive inverter repair services across all brands. From fault finding and troubleshooting to component-level repairs and practical repair solutions.",
     icon: BatteryCharging,
   },
   {
     number: "02",
-    title: "Sunsynk inverter repairs",
+    title: "Sunsynk & Deye Inverter Repairs",
     description:
-      "Specialist attention for Sunsynk inverter faults, with clear advice throughout.",
+      "Specialist repair support for Sunsynk and Deye inverters, from fault diagnosis and troubleshooting to practical repair solutions.",
     icon: Sun,
   },
   {
@@ -88,14 +88,14 @@ const processSteps = [
 
 const workImages = [
   {
-    src: "/illustrative-inverter-workshop.jpg",
-    alt: "Technician inspecting equipment in a technical workshop",
+    src: "/inspection.jpg",
+    alt: "Technician soldering an inverter circuit board at a repair bench",
     title: "Equipment inspection",
     description: "A careful look at the system helps guide the diagnosis.",
   },
   {
-    src: "/illustrative-electronics-repair.jpg",
-    alt: "Technician operating equipment in an industrial workshop",
+    src: "/trouble.jpg",
+    alt: "SPOT technician testing a Sunsynk inverter with a multimeter in the workshop",
     title: "Technical troubleshooting",
     description: "Understanding the wider system is part of finding the fault.",
   },
@@ -112,8 +112,9 @@ export default function Home() {
             <div className="hero-copy">
               <p className="eyebrow hero-eyebrow">
                 <span className="eyebrow-dot" />
-                Inverter specialists <span className="eyebrow-separator">·</span>{" "}
-                Mpumalanga &amp; Gauteng
+                All-brand inverter repairs{" "}
+                <span className="eyebrow-separator">·</span> Gauteng &amp;
+                Mpumalanga
               </p>
               <h1 id="hero-heading">
                 We fix what
@@ -121,8 +122,9 @@ export default function Home() {
                 others <span>replace.</span>
               </h1>
               <p className="hero-description">
-                Specialist Deye and Sunsynk inverter repairs. We find the fault,
-                explain the fix, and help bring your backup power back online.
+                Specialists in all inverter brands and aspects of inverter
+                repairs. We find the fault, explain the fix, and help bring your
+                backup power back online.
               </p>
               <div className="hero-actions">
                 <a
@@ -144,7 +146,7 @@ export default function Home() {
                 <div className="proof-item">
                   <MapPin size={17} aria-hidden="true" />
                   <span>
-                    <strong>KwaMhlanga</strong>
+                    <strong>Gauteng</strong>
                     <small>Based here</small>
                   </span>
                 </div>
@@ -152,7 +154,7 @@ export default function Home() {
                 <div className="proof-item">
                   <Zap size={17} aria-hidden="true" />
                   <span>
-                    <strong>Mpumalanga &amp; Gauteng</strong>
+                    <strong>Gauteng &amp; Mpumalanga</strong>
                     <small>Service areas</small>
                   </span>
                 </div>
@@ -252,8 +254,9 @@ export default function Home() {
             <div className="service-footnote">
               <span className="footnote-line" />
               <p>
-                Focused on Deye and Sunsynk inverter repairs across Mpumalanga
-                and Gauteng.
+                Specialists in all aspects of inverter repairs, covering all
+                major inverter brands, including Deye and Sunsynk, across
+                Gauteng and Mpumalanga.
               </p>
             </div>
           </div>
@@ -286,9 +289,6 @@ export default function Home() {
                       sizes="(max-width: 760px) 100vw, 50vw"
                       className="work-image"
                     />
-                    <span className="work-image-label">
-                      Illustrative image
-                    </span>
                   </div>
                   <figcaption className="work-caption">
                     <span className="work-number">0{index + 1}</span>
@@ -302,8 +302,7 @@ export default function Home() {
               ))}
             </div>
             <p className="work-disclaimer">
-              Illustrative repair imagery only — these are not photographs of
-              SPOT customer jobs.
+              Photos from SPOT&apos;s inverter repair work.
             </p>
           </div>
         </section>
@@ -468,14 +467,16 @@ export default function Home() {
               </div>
               <div className="contact-detail">
                 <span className="detail-label">Find us</span>
-                <p>KwaMhlanga, South Africa</p>
+                <p>Gauteng, South Africa</p>
               </div>
               <div className="contact-detail">
                 <span className="detail-label">We cover</span>
-                <p>Mpumalanga &amp; Gauteng</p>
+                <p>Gauteng &amp; Mpumalanga</p>
               </div>
               <span className="contact-detail-note">
-                Deye &amp; Sunsynk inverter specialists
+                Specialists in all aspects of inverter repairs, covering all
+                major inverter brands, including Deye and Sunsynk, across
+                Gauteng and Mpumalanga.
               </span>
             </div>
           </div>
@@ -500,13 +501,13 @@ export default function Home() {
             <a href="#contact">Contact</a>
           </div>
           <div className="footer-column footer-contact">
-            <h2>Get in touch</h2>
+            <h2>Get in touch with Kagiso</h2>
             <a href={phoneUrl}>082 225 1241</a>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon size={16} />
               WhatsApp SPOT <ArrowUpRight size={13} aria-hidden="true" />
             </a>
-            <span>KwaMhlanga · Mpumalanga &amp; Gauteng</span>
+            <span>Gauteng · Gauteng &amp; Mpumalanga</span>
           </div>
           <a className="back-to-top" href="#top" aria-label="Back to top">
             <ArrowUpRight size={19} aria-hidden="true" />
@@ -515,6 +516,16 @@ export default function Home() {
         <div className="container footer-bottom">
           <span>© 2026 SPOT Inverter Repairs</span>
           <span>Specialist inverter repairs in South Africa</span>
+          <span>
+            Design &amp; hosted by{" "}
+            <a
+              href="https://sihleb.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SihleB Digital Studio
+            </a>
+          </span>
         </div>
       </footer>
 
@@ -525,7 +536,7 @@ export default function Home() {
         rel="noopener noreferrer"
         aria-label="Chat with SPOT Inverter Repairs on WhatsApp"
       >
-        <WhatsAppIcon size={22} />
+        <WhatsAppIcon size={22} variant="classic" />
         <span>WhatsApp us</span>
       </a>
     </>

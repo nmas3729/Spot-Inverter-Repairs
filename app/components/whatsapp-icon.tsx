@@ -1,4 +1,10 @@
-export default function WhatsAppIcon({ size = 18 }: { size?: number }) {
+export default function WhatsAppIcon({
+  size = 18,
+  variant = "standard",
+}: {
+  size?: number;
+  variant?: "standard" | "classic";
+}) {
   return (
     <svg
       aria-hidden="true"
@@ -9,6 +15,16 @@ export default function WhatsAppIcon({ size = 18 }: { size?: number }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle cx="12" cy="12" r="11" fill="#25D366" />
+      {variant === "classic" && (
+        <path
+          d="M12 4.2a7.8 7.8 0 0 0-6.75 11.72L4.3 19.7l3.85-1.02A7.8 7.8 0 1 0 12 4.2Z"
+          fill="none"
+          stroke="#fff"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.4"
+        />
+      )}
       <path
         d="M17.35 14.2c-.28-.14-1.65-.81-1.9-.91-.26-.09-.44-.14-.63.14-.19.28-.72.91-.88 1.1-.16.19-.32.21-.6.07-.28-.14-1.18-.43-2.24-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.56.12-.12.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.53-.86-2.08-.23-.55-.46-.48-.63-.49-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.98.96-.98 2.35 0 1.39 1.01 2.73 1.15 2.92.14.19 1.98 3.03 4.8 4.25.67.29 1.2.46 1.61.59.68.22 1.3.19 1.79.11.55-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.26-.19-.54-.33Z"
         fill="#fff"
