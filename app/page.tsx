@@ -254,8 +254,9 @@ export default function Home() {
             <div className="service-footnote">
               <span className="footnote-line" />
               <p>
-                Specialists in all aspects of inverter repairs, covering all
-                major inverter brands, including Deye and Sunsynk, across
+                Specialists in all aspects of inverter repairs across multiple
+                brands, including Mecer, FiveStar, Kodak, Growatt, Luxpower,
+                RCT, Deye and Sunsynk, and many more. Serving customers across
                 Gauteng and Mpumalanga.
               </p>
             </div>
@@ -474,8 +475,9 @@ export default function Home() {
                 <p>Gauteng &amp; Mpumalanga</p>
               </div>
               <span className="contact-detail-note">
-                Specialists in all aspects of inverter repairs, covering all
-                major inverter brands, including Deye and Sunsynk, across
+                Specialists in all aspects of inverter repairs across multiple
+                brands, including Mecer, FiveStar, Kodak, Growatt, Luxpower,
+                RCT, Deye and Sunsynk, and many more. Serving customers across
                 Gauteng and Mpumalanga.
               </span>
             </div>
